@@ -28,7 +28,8 @@
   }
   
   .main-list li {
-    margin-left: 50px;
+    margin-left: 0px;
+    
   }
   
   .main-list li:first-child {
@@ -41,27 +42,16 @@
     color: white;
     gap: 4px;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 12px;
     transition: color 0.3s ease;
-    padding: 4px 0px;
+    padding: 10px 9px;
   }
-  
-  .main-list li a:hover {
-    color: #ad3b89;
-  }
-
-  .main-list i {
-    margin-left: 10px;
-  }
- 
-  
-  
-  
+      
   .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:rgb(35, 30, 30);
+    background-color: #fff;
     padding: 20px;
     height: 80px;
     box-shadow: 0 4px 8px 0 grey;
@@ -91,9 +81,8 @@
   
   .main-nav li a {
     text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-family:"Noto Sans";
+    color: #161618;
+    font-size: 15px;
     transition: color 0.3s ease;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.3s ease-in-out;
@@ -108,42 +97,6 @@
     display: flex;
   }
   
-  .button1 {
-     padding: 10px 50px;
-     margin-right: 10px;
-     border: none;
-     border-radius: 30px;
-     background-color: rgb(229, 59, 185);
-     color: white;
-     font-size: 20px;
-     border: 3px solid rgb(229, 59, 185);
-     font-family: "Fugaz One";
-     transition: background-color 0.3s ease-in-out;
-  }
-  .button1:hover {
-    background-color: rgb(35, 30, 30);
-    border-radius: 30px;
-    border-color: rgb(229, 59, 185);
-    color: rgb(229, 59, 185);
-  }
-  
-  .button2 {
-     padding: 10px 50px;
-     border: none;
-     border-radius: 30px;
-     background-color: rgb(35, 30, 30);
-     color: white;
-     font-size: 20px;
-     border: 3px solid white;
-     font-family: "Fugaz One";
-     transition: background-color 0.3s ease-in-out;
-  }
-  .button2:hover {
-    background-color: white;
-    border-radius: 30px;
-    border-color: white;
-    color: rgb(35, 30, 30);
-  }
   
   footer {
     background-color: rgb(35, 30, 30);
