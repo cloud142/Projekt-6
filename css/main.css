@@ -8,6 +8,10 @@
   html {
     height: 100%;
   }
+
+  i {
+    color: #3C412A;
+  }
   
   .top-section {
     background-color: #3C412A;
@@ -97,120 +101,111 @@
     display: flex;
   }
   
-  
   footer {
-    background-color: rgb(35, 30, 30);
+    background-color: #fff;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    bottom: 0;
+    text-align: center;
     height: auto;
     bottom: 0;
     width: 100%;
     position: absolute;
-  }
+}
+
+.footer-heading {
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 500px; /* Padding styrer afstanden mellem kolonnerne */ 
+}
+
+.column {
+  flex: 0 0 20%;
+  text-align: left; /* Justerer teksten til venstre side */
+  margin: 0 auto; 
   
-  .footer-logo img {
-    text-align: center;
-    height: 60px;
-    cursor: pointer;
-  }
-  
-  
-  .footer-logo {
-    text-align: center;
-  }
-  
-  .footer-lists {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .footer-lists ul {
-    list-style: none;
-    margin: 0;
+}
+
+
+.column:last-child {
+    margin-right: 0;
+}
+
+.submenu {
+    list-style-type: none;
     padding: 0;
-  }
+}
+
+.submenu-item {
+    margin-bottom: 5px;
+}
   
-  
-  .footer-lists li {
-    display: inline-block;
-    margin-right: 20px;
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    font-family:"Noto Sans";
-    transition: color 0.3s ease;
-    cursor: pointer;
+
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-list li {
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #161618;
+  font-size: 15px;
+}
+
+.footer-images {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-images img {
+  margin: 0 10px;
+  height: 30px;
+  margin-bottom: -20PX;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+  .icons ul  {
+    margin-left: 50px;
   }
-  .footer-lists li:hover {
-    color: rgb(229, 59, 185);
+  .icons i  {
+    font-size: 20px;
+    margin-right: 5px;
   }
-  
-  .footer-list {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .footer-list ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .footer-list li:nth-child(2) {
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-color: white;
-  }
-  .footer-list li:nth-child(2):hover {
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-color: rgb(229, 59, 185);
-  }
-  
-  .footer-list li {
-    display: inline-block;
-    margin-right: 20px;
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    font-family:"Noto Sans";
-    transition: color 0.3s ease;
-    cursor: pointer;
-  }
-  .footer-list li:hover {
-    color: rgb(229, 59, 185);
-  }
-  
-  .footer-images {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .footer-images img {
-    margin: 0 10px;
-    height: 55px;
-    cursor: pointer;
-  
-  }
-  
-  .footer-text {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  p {
-    display: inline-block;
-    margin-right: 20px;
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    font-family:"Noto Sans";
-  }
+
+.divider {
+  border: 1px solid #ccc; /* Grå farve for linjen */
+  margin: 20px 0; /* Juster afstanden over og under linjen */
+  width: 100%;
+}
+
+p {
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #161618;
+  font-size: 15px;
+}
+
