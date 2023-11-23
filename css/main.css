@@ -118,20 +118,17 @@
     
 }
 
-.columns {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0 500px; /* Padding styrer afstanden mellem kolonnerne */ 
+.column {
+  flex: 0 0 calc(100% - 20px); /* 100% bredde på små skærme og fjern margin-bottom */
+  margin: 0 10px 50px; /* Juster margin mellem kolonnerne og tilføj margin nederst */
+  text-align: left;
 }
 
-.column {
-  flex: 0 0 20%;
-  text-align: left; /* Justerer teksten til venstre side */
-  margin: 0 auto; 
-  
+.columns {
+  display: flex;
+  flex-direction: column; /* Ændret fra row til column */
+  align-items: flex-start; /* Venstrejustering af kolonnerne */
+  margin: 0 0 20px; /* Fjern negative margin og tilføj margin nederst */
 }
 
 
@@ -148,8 +145,6 @@
     margin-bottom: 5px;
 }
   
-
-
 .footer-list {
   display: flex;
   justify-content: center;
@@ -164,7 +159,6 @@
 
 .footer-list li {
   display: inline-block;
-  margin-right: 20px;
   text-decoration: none;
   color: #161618;
   font-size: 15px;
@@ -187,12 +181,12 @@
   margin-top: 20px;
 }
 
-  .icons ul  {
-    margin-left: 50px;
-  }
   .icons i  {
     font-size: 20px;
-    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
   }
 
 .divider {
@@ -209,3 +203,46 @@ p {
   font-size: 15px;
 }
 
+@media (min-width: 768px) {
+  .columns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 5px; /* Padding styrer afstanden mellem kolonnerne */
+    flex-direction: row; 
+  }
+  
+  .column {
+    flex: 0 0 20%;
+    text-align: left; /* Justerer teksten til venstre side */
+    margin: 0 auto;
+    color: green; 
+  }
+  
+  
+  .column:last-child {
+      margin-right: 0;
+  }
+  .icons ul  {
+    margin-left: 50px;
+  }
+  .icons i  {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  .footer-list li {
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #161618;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .column {
+    color: blue;
+  }
+}
