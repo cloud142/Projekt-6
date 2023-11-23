@@ -1,8 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+
   
   .header {
     text-align: center;
@@ -12,16 +8,16 @@ body {
     align-items: center;
   }
   
-  h1 {
+  .header h1 {
     font-size: 24px; /* Mobilstørrelse */
     font-weight: bold;
   }
   
-  h2 {
+  .header h2 {
     font-size: 18px; /* Mobilstørrelse */
   }
   
-  p {
+  .header p {
     font-size: 16px; /* Mobilstørrelse */
     margin-bottom: 0; /* Fjern afstanden under p-elementet */
   }
@@ -46,7 +42,7 @@ body {
     display: none;
   }
   
-  img {
+  .mySlides img {
     width: 100%;
   }
   
@@ -56,15 +52,15 @@ body {
   
   @media (min-width: 768px) {
     /* Stilarter for større skærme */
-    h1 {
+    .header h1 {
       font-size: 36px;
     }
   
-    h2 {
+    .header h2 {
       font-size: 24px;
     }
   
-    p {
+    .header p {
       font-size: 18px;
       margin-bottom: 15px; /* Juster afstanden under p-elementet på større skærme */
     }
@@ -81,15 +77,15 @@ body {
   
   @media (min-width: 768px) {
     /* Stilarter for større skærme */
-    h1 {
+    .header h1 {
       font-size: 36px;
     }
   
-    h2 {
+    .header h2 {
       font-size: 24px;
     }
   
-    p {
+    .header p {
       font-size: 18px;
     }
   
