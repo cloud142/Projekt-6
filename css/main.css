@@ -112,7 +112,7 @@
 }
 
 .footer-heading {
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 50px;
     font-weight: 500;
     
@@ -122,6 +122,13 @@
   flex: 0 0 calc(100% - 20px); /* 100% bredde på små skærme og fjern margin-bottom */
   margin: 0 10px 50px; /* Juster margin mellem kolonnerne og tilføj margin nederst */
   text-align: left;
+}
+.column h3 {
+  font-size: 20px;
+}
+
+.column li {
+  font-size: 15px;
 }
 
 .columns {
@@ -210,39 +217,34 @@ p {
     flex-wrap: wrap;
     text-align: center;
     margin: 0 auto;
-    padding: 0 5px; /* Padding styrer afstanden mellem kolonnerne */
+    padding: 0 5px; 
     flex-direction: row; 
   }
   
   .column {
     flex: 0 0 20%;
-    text-align: left; /* Justerer teksten til venstre side */
+    text-align: left; 
     margin: 0 auto;
-    color: green; 
   }
   
-  
-  .column:last-child {
-      margin-right: 0;
-  }
   .icons ul  {
     margin-left: 50px;
   }
+
   .icons i  {
     font-size: 20px;
     margin-right: 5px;
+    display: inline;
   }
   .footer-list li {
     display: inline-block;
     margin-right: 20px;
-    text-decoration: none;
-    color: #161618;
-    font-size: 15px;
   }
 }
 
 @media (min-width: 1024px) {
-  .column {
+  .columns {
     color: blue;
+
   }
 }
