@@ -1,5 +1,5 @@
 body {
-    font-family: 'Futura PT';
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
@@ -7,6 +7,9 @@ body {
   .header {
     text-align: center;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   h1 {
@@ -20,14 +23,16 @@ body {
   
   p {
     font-size: 16px; /* Mobilstørrelse */
+    margin-bottom: 0; /* Fjern afstanden under p-elementet */
   }
   
   button {
     font-size: 16px;
     padding: 10px 20px;
-    background-color: #3498db;
-    color: #fff;
+    background-color: #fff; /* Ændret baggrundsfarven til hvid */
+    color: #3498db; /* Ændret tekstfarven til blå (eller en farve efter dit valg) */
     border: none;
+    border-radius: 20px; /* Tilføjet afrundede kanter */
     cursor: pointer;
   }
   
@@ -48,6 +53,31 @@ body {
   .prev, .next {
     display: none; /* Skjul knapperne på mobil */
   }
+  
+  @media (min-width: 768px) {
+    /* Stilarter for større skærme */
+    h1 {
+      font-size: 36px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    p {
+      font-size: 18px;
+      margin-bottom: 15px; /* Juster afstanden under p-elementet på større skærme */
+    }
+  
+    .slideshow-container {
+      max-width: 800px; /* Juster maksimal bredde til større skærme */
+    }
+  
+    .prev, .next {
+      display: inline-block; /* Vis knapperne på større skærme */
+    }
+  }
+  
   
   @media (min-width: 768px) {
     /* Stilarter for større skærme */
