@@ -20,7 +20,7 @@
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
   }
   
@@ -36,19 +36,15 @@
     
   }
   
-  .main-list li:first-child {
-    margin-left: 0;
-  }
   
   .main-list li a {
     text-decoration: none;
     cursor: pointer;
     color: white;
-    gap: 4px;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 15px;
     transition: color 0.3s ease;
-    padding: 10px 9px;
+    padding: 10px 10px;
   }
       
   .main-header {
@@ -62,10 +58,9 @@
   }
   
   .logo img {
-    height: 55px;
+    height: 75px;
     cursor: pointer;
   }
-  
   
   .main-nav {
     display: flex;
@@ -76,7 +71,6 @@
   
   .main-nav li {
     margin-right: 20px;
-  
   }
   
   .main-nav li:last-child {
@@ -86,7 +80,8 @@
   .main-nav li a {
     text-decoration: none;
     color: #161618;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 450;
     transition: color 0.3s ease;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.3s ease-in-out;
@@ -94,11 +89,27 @@
   
   .main-nav li a:hover {
     color: grey;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #3C412A;
+  }
+
+  .main-nav li a.red {
+    color: #EF4545; /* Ændre farven efter dine præferencer */
   }
   
-  .header-buttons {
-    display: flex;
+  .main-header ul {
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .main-header .iconh li  {
+    margin-right: 5px;
+    cursor: pointer;
+    display: inline;
+  }
+ 
+  .main-header  {
+    justify-content: space-around;
   }
   
   footer {
@@ -109,60 +120,60 @@
     bottom: 0;
     width: 100%;
     position: absolute;
-}
+  }
 
-.footer-heading {
+  .footer-heading {
     font-size: 25px;
     margin-bottom: 50px;
     font-weight: 500;
-    
-}
+  }
 
-.column {
-  flex: 0 0 calc(100% - 20px); /* 100% bredde på små skærme og fjern margin-bottom */
-  margin: 0 10px 50px; /* Juster margin mellem kolonnerne og tilføj margin nederst */
+  .column {
+  flex: 0 0 calc(100% - 20px); 
+  margin: 0 10px 50px;
   text-align: left;
-}
-.column h3 {
+  }
+
+  .column h3 {
   font-size: 20px;
-}
+  }
 
-.column li {
+  .column li {
   font-size: 15px;
-}
+  }
 
-.columns {
+  .columns {
   display: flex;
-  flex-direction: column; /* Ændret fra row til column */
-  align-items: flex-start; /* Venstrejustering af kolonnerne */
-  margin: 0 0 20px; /* Fjern negative margin og tilføj margin nederst */
-}
+  flex-direction: column; 
+  align-items: flex-start; 
+  margin: 0 0 20px; 
+  }
 
 
-.column:last-child {
-    margin-right: 0;
-}
+  .column:last-child {
+  margin-right: 0;
+  }
 
-.submenu {
+  .submenu {
     list-style-type: none;
     padding: 0;
-}
+  }
 
-.submenu-item {
+  .submenu-item {
     margin-bottom: 5px;
-}
+  }
   
-.footer-list {
+  .footer-list {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-}
+  }
 
-.footer-list ul {
+  .footer-list ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
+  }
 
 .footer-list li {
   display: inline-block;
@@ -197,8 +208,8 @@
   }
 
 .divider {
-  border: 1px solid #ccc; /* Grå farve for linjen */
-  margin: 20px 0; /* Juster afstanden over og under linjen */
+  border: 1px solid #ccc; 
+  margin: 20px 0; 
   width: 100%;
 }
 
@@ -212,19 +223,13 @@ p {
 
 @media (min-width: 768px) {
   .columns {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0 5px; 
     flex-direction: row; 
   }
   
   .column {
     flex: 0 0 20%;
-    text-align: left; 
     margin: 0 auto;
+    color: #EF4545;
   }
   
   .icons ul  {
@@ -236,15 +241,24 @@ p {
     margin-right: 5px;
     display: inline;
   }
+
   .footer-list li {
-    display: inline-block;
     margin-right: 20px;
   }
+  
+  .main-list li a {
+    font-size: 18px;
+    padding: 10px 30px;
+  }
+
+  .footer-heading {
+    font-size: 40px;
+  }
+
 }
 
 @media (min-width: 1024px) {
-  .columns {
+  .column {
     color: blue;
-
   }
 }
