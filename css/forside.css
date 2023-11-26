@@ -54,7 +54,45 @@
   .prev, .next {
     display: none; /* Skjul knapperne på mobil */
   }
+
+  .buy-section {
+    text-align: center;
+    margin: 20px 0; /* Tilføjet afstand over og under sektionen */
+  }
   
+  .buy-section p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .products-container {
+    /* Stil for produkterne her */
+  }
+
+  .product {
+    width: calc(33.33% - 18.8px); /* 33.33% width for each product with 18.8px margin */
+    float: left;
+    margin-right: 18.8px; /* Set right margin */
+    box-sizing: border-box; /* Include padding and border in the width */
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .product h3 {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .product p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+
+
   @media (min-width: 768px) {
     /* Stilarter for større skærme */
     .header h1 {
