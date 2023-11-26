@@ -12,6 +12,12 @@
   i {
     color: #3C412A;
   }
+
+  .column a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #161618;
+  }
   
   .top-section {
     background-color: #3C412A;
