@@ -1,83 +1,55 @@
 
-  
-  .header {
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .header h1 {
-    font-size: 24px; /* Mobilstørrelse */
-    font-weight: bold;
-  }
-  
-  .header h2 {
-    font-size: 18px; /* Mobilstørrelse */
-  }
-  
-  .header p {
-    font-size: 16px; /* Mobilstørrelse */
-    margin-bottom: 0; /* Fjern afstanden under p-elementet */
-  }
-  
-  button {
-    font-size: 16px;
-    padding: 10px 20px;
-    background-color: #fff; /* Ændret baggrundsfarven til hvid */
-    color: #000000; /* Ændret tekstfarven til blå (eller en farve efter dit valg) */
-    border: none;
-    border-radius: 20px; /* Tilføjet afrundede kanter */
-    cursor: pointer;
-  }
+.header {
+  text-align: center;
+  margin-bottom: 20px; /* Tilføjet afstand under header */
+}
 
-  button:hover {
-    background-color: #3C412A; /* Grøn farve når musen er over knappen */
-    color: #fff; /* Ændret tekstfarven til hvid, så det er synligt på den grønne baggrund */
-  }
-  
-  .slideshow-container {
-    max-width: 100%; /* Fyld bredden af forælderens container */
-    position: relative;
-    margin: auto;
-  }
-  
-  .mySlides {
-    display: none;
-  }
-  
-  .mySlides img {
-    width: 100%;
-  }
-  
-  .prev, .next {
-    display: none; /* Skjul knapperne på mobil */
-  }
-  
-  @media (min-width: 768px) {
-    /* Stilarter for større skærme */
-    .header h1 {
-      font-size: 36px;
-    }
-  
-    .header h2 {
-      font-size: 24px;
-    }
-  
-    .header p {
-      font-size: 18px;
-      margin-bottom: 15px; /* Juster afstanden under p-elementet på større skærme */
-    }
-  
-    .slideshow-container {
-      max-width: 800px; /* Juster maksimal bredde til større skærme */
-    }
-  
-    .prev, .next {
-      display: inline-block; /* Vis knapperne på større skærme */
-    }
-  }
+.header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header h2 {
+  font-size: 18px;
+}
+
+.header p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000000;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3C412A;
+  color: #fff;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+}
+
+.prev, .next {
+  display: none;
+}
   
   
   @media (min-width: 768px) {
