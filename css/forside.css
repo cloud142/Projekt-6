@@ -76,8 +76,10 @@
   }
   
   .product img {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
+    width: 80%;
+    height: auto; 
+    max-width: 100%;
+    margin: 10px auto; 
   }
   
   .product h3 {
