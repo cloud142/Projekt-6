@@ -26,10 +26,15 @@
     font-size: 16px;
     padding: 10px 20px;
     background-color: #fff; /* Ændret baggrundsfarven til hvid */
-    color: #3498db; /* Ændret tekstfarven til blå (eller en farve efter dit valg) */
+    color: #000000; /* Ændret tekstfarven til blå (eller en farve efter dit valg) */
     border: none;
     border-radius: 20px; /* Tilføjet afrundede kanter */
     cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #3C412A; /* Grøn farve når musen er over knappen */
+    color: #fff; /* Ændret tekstfarven til hvid, så det er synligt på den grønne baggrund */
   }
   
   .slideshow-container {
