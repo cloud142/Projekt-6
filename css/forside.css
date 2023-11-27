@@ -9,27 +9,52 @@
   }
   
   .header h1 {
-    font-size: 24px; /* Mobilstørrelse */
+    font-size: 50px; /* Mobilstørrelse */
     font-weight: bold;
+    position: absolute; /* Tilføj position: absolute; */
+    top: 30%; /* Placer overskriften i midten af headeren */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrer overskriften i midten af headeren */
+    z-index: 1; 
+    color: #fff;
   }
   
   .header h2 {
-    font-size: 18px; /* Mobilstørrelse */
+    font-size: 20px; /* Mobilstørrelse */
+    position: absolute; /* Tilføj position: absolute; */
+    top: 40%; /* Placer overskriften i midten af headeren */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrer overskriften i midten af headeren */
+    z-index: 1;
+    color: #fff; 
+
   }
   
   .header p {
-    font-size: 16px; /* Mobilstørrelse */
+    font-size: 18px; /* Mobilstørrelse */
     margin-bottom: 0; /* Fjern afstanden under p-elementet */
+    position: absolute; /* Tilføj position: absolute; */
+    top: 45%; /* Placer overskriften i midten af headeren */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrer overskriften i midten af headeren */
+    z-index: 1; 
+    color: #fff;
   }
   
   button {
     font-size: 16px;
-    padding: 10px 20px;
+    padding: 10px 30px;
     background-color: #fff; /* Ændret baggrundsfarven til hvid */
     color: #000000; /* Ændret tekstfarven til blå (eller en farve efter dit valg) */
     border: none;
-    border-radius: 20px; /* Tilføjet afrundede kanter */
+    border-radius: 5px; /* Tilføjet afrundede kanter */
     cursor: pointer;
+    position: absolute; /* Tilføj position: absolute; */
+    top: 52%; /* Placer overskriften i midten af headeren */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrer overskriften i midten af headeren */
+    z-index: 1; 
+
   }
 
   button:hover {
@@ -44,13 +69,16 @@
   }
   
   .mySlides {
-    display: none;
+    text-align: center;
+    margin-top: -39px;
+    z-index: 2;
   }
-  
+
   .mySlides img {
     width: 100%;
   }
   
+
   .prev, .next {
     display: none; /* Skjul knapperne på mobil */
   }
@@ -64,21 +92,19 @@
     font-size: 20px;
   }
   
-  .products-container {
-    /* Stil for produkterne her */
-  }
+
+
 
   .product {
-    width: calc(33.33% - 18.8px); /* 33.33% width for each product with 18.8px margin */
-    float: left;
-    margin-right: 18.8px; /* Set right margin */
-    box-sizing: border-box; /* Include padding and border in the width */
+    width: 100%; /* 33.33% width for each product with 18.8px margin */
+    display: flex;
+    justify-content: center;
+
   }
   
   .product img {
     width: 80%;
     height: auto; 
-    max-width: 100%;
     margin: 10px auto; 
   }
   
@@ -91,13 +117,17 @@
     font-size: 14px;
     margin: 5px 0;
   }
+  .image-wrapper {
+    text-align: left;
+    margin: 0 10px;
+  }
 
 
 
   @media (min-width: 768px) {
     /* Stilarter for større skærme */
     .header h1 {
-      font-size: 36px;
+      font-size: 150px;
     }
   
     .header h2 {
