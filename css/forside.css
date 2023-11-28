@@ -9,7 +9,7 @@
   }
   
   .header h1 {
-    font-size: 50px; /* Mobilstørrelse */
+    font-size: 30px; /* Mobilstørrelse */
     font-weight: bold;
     position: absolute; /* Tilføj position: absolute; */
     top: 30%; /* Placer overskriften i midten af headeren */
@@ -20,7 +20,7 @@
   }
   
   .header h2 {
-    font-size: 20px; /* Mobilstørrelse */
+    font-size: 18px; /* Mobilstørrelse */
     position: absolute; /* Tilføj position: absolute; */
     top: 40%; /* Placer overskriften i midten af headeren */
     left: 50%;
@@ -77,7 +77,7 @@
   .mySlides img {
     display: block;
     margin:0 auto;
-    max-width: 1200px;
+    width: 1425px;
     max-height: 600px;
     overflow:visible;
   }
@@ -131,15 +131,15 @@
   @media (min-width: 768px) {
     /* Stilarter for større skærme */
     .header h1 {
-      font-size: 150px;
+      font-size: 120px;
     }
   
     .header h2 {
-      font-size: 24px;
+      font-size: 25px;
     }
   
     .header p {
-      font-size: 18px;
+      font-size: 20px;
       margin-bottom: 15px; /* Juster afstanden under p-elementet på større skærme */
     }
   
@@ -156,7 +156,7 @@
   @media (min-width: 768px) {
     /* Stilarter for større skærme */
     .header h1 {
-      font-size: 36px;
+      font-size: 50px;
     }
   
     .header h2 {
