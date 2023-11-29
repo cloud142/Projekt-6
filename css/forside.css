@@ -9,34 +9,34 @@
   }
   
   .header h1 {
-    font-size: 30px; /* Mobilstørrelse */
+    font-size: 30px; 
     font-weight: bold;
-    position: absolute; /* Tilføj position: absolute; */
-    top: 30%; /* Placer overskriften i midten af headeren */
+    position: absolute; 
+    top: 30%; 
     left: 50%;
-    transform: translate(-50%, -50%); /* Centrer overskriften i midten af headeren */
+    transform: translate(-50%, -50%);
     z-index: 1; 
     color: #fff;
   }
   
   .header h2 {
-    font-size: 18px; /* Mobilstørrelse */
-    position: absolute; /* Tilføj position: absolute; */
-    top: 40%; /* Placer overskriften i midten af headeren */
+    font-size: 18px; 
+    position: absolute; 
+    top: 40%; 
     left: 50%;
-    transform: translate(-50%, -50%); /* Centrer overskriften i midten af headeren */
+    transform: translate(-50%, -50%);
     z-index: 1;
     color: #fff; 
 
   }
   
   .header p {
-    font-size: 18px; /* Mobilstørrelse */
-    margin-bottom: 0; /* Fjern afstanden under p-elementet */
-    position: absolute; /* Tilføj position: absolute; */
-    top: 45%; /* Placer overskriften i midten af headeren */
+    font-size: 18px; 
+    margin-bottom: 0; 
+    position: absolute; 
+    top: 45%; 
     left: 50%;
-    transform: translate(-50%, -50%); /* Centrer overskriften i midten af headeren */
+    transform: translate(-50%, -50%); 
     z-index: 1; 
     color: #fff;
   }
@@ -44,26 +44,26 @@
   button {
     font-size: 16px;
     padding: 10px 30px;
-    background-color: #fff; /* Ændret baggrundsfarven til hvid */
-    color: #000000; /* Ændret tekstfarven til blå (eller en farve efter dit valg) */
+    background-color: #fff;
+    color: #000000; 
     border: none;
-    border-radius: 5px; /* Tilføjet afrundede kanter */
+    border-radius: 5px; 
     cursor: pointer;
-    position: absolute; /* Tilføj position: absolute; */
-    top: 52%; /* Placer overskriften i midten af headeren */
+    position: absolute; 
+    top: 52%; 
     left: 50%;
-    transform: translate(-50%, -50%); /* Centrer overskriften i midten af headeren */
+    transform: translate(-50%, -50%);
     z-index: 1; 
 
   }
 
   button:hover {
-    background-color: #3C412A; /* Grøn farve når musen er over knappen */
-    color: #fff; /* Ændret tekstfarven til hvid, så det er synligt på den grønne baggrund */
+    background-color: #3C412A; 
+    color: #fff; 
   }
   
   .slideshow-container {
-    max-width: 100%; /* Fyld bredden af forælderens container */
+    max-width: 100%;
     position: relative;
     margin: auto;
   }
@@ -84,12 +84,12 @@
   
 
   .prev, .next {
-    display: none; /* Skjul knapperne på mobil */
+    display: none; 
   }
 
   .buy-section {
     text-align: center;
-    margin: 20px 0; /* Tilføjet afstand over og under sektionen */
+    margin: 20px 0; 
   }
   
   .buy-section p {
@@ -97,10 +97,8 @@
   }
   
 
-
-
   .product {
-    width: 100%; /* 33.33% width for each product with 18.8px margin */
+    width: 100%; 
     display: flex;
     justify-content: center;
 
@@ -126,10 +124,51 @@
     margin: 0 10px;
   }
 
+  .container {
+    display: flex;
+  }
+  
+
+  .green-box {
+    background-color: #3C412A;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px; 
+
+
+.green-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.candidates {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.candidate {
+    text-align: center;
+    max-width: 300px;
+}
+
+.candidate img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.candidate p {
+    font-size: 16px;
+    margin: 0;
+    color: #fff;
+}
+
 
 
   @media (min-width: 768px) {
-    /* Stilarter for større skærme */
     .header h1 {
       font-size: 120px;
     }
@@ -140,21 +179,21 @@
   
     .header p {
       font-size: 20px;
-      margin-bottom: 15px; /* Juster afstanden under p-elementet på større skærme */
+      margin-bottom: 15px; 
     }
   
     .slideshow-container {
-      max-width: 800px; /* Juster maksimal bredde til større skærme */
+      max-width: 800px; 
     }
   
     .prev, .next {
-      display: inline-block; /* Vis knapperne på større skærme */
+      display: inline-block; 
     }
   }
   
   
   @media (min-width: 768px) {
-    /* Stilarter for større skærme */
+    
     .header h1 {
       font-size: 50px;
     }
@@ -168,11 +207,11 @@
     }
   
     .slideshow-container {
-      max-width: 800px; /* Juster maksimal bredde til større skærme */
+      max-width: 800px; 
     }
   
     .prev, .next {
-      display: inline-block; /* Vis knapperne på større skærme */
+      display: inline-block; 
     }
   }
   
