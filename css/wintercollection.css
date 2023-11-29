@@ -1,0 +1,70 @@
+/* Stil for din header og footer her */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    flex-wrap: wrap; /* Tillader elementerne at gå til næste række ved behov */
+  }
+  
+  .column {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Sikrer, at padding og border ikke øger elementets bredde */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .filter-group {
+    margin-right: 20px;
+  }
+  
+  #resultCount {
+    margin-top: 20px;
+  }
+  
+  /* Medieforespørgsler for at gøre siden responsiv */
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Skift til kolonne layout på mindre skærme */
+    }
+  
+    .column {
+      width: 100%;
+    }
+  
+    .filter-group {
+      margin-right: 0; /* Fjern højremargen for filtergrupper på mindre skærme */
+      margin-bottom: 10px; /* Tilføj bundmargen for at adskille filtergrupper på mindre skærme */
+    }
+  }
+  

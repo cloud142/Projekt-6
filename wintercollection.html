@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="dk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/forside.css">
+    <link rel="stylesheet" href="css/wintercollection.css">
+    <link rel="icon" href="img/logo.png">
+    <script src="js/salma.js" defer></script>
+    <link href="https://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d695244064.js" crossorigin="anonymous"></script>    <title>LaRue Fashion</title>
+</head>
+<body>
+    <section class="top-section">
+        <ul class="main-list">
+          <li><a href="#">Find os her</a></li>
+          <li><a href="#">Let LaRue be your guide destination for Fashion!</a></li>
+          <li><a href="#">Denmark</a></li>
+        </ul>
+      </section>
+    
+      <header class="main-header">
+        <div class="logo">
+          <a href="index.html">
+          <img src="img/logo.png" alt="Larue">
+          </a>
+        </div>
+        <ul class="main-nav">
+          <li><a href="#">MODE</a></li>
+          <li><a href="index.html">HJEM</a></li>
+          <li><a class="red" href="#">UDSALG</a></li>
+        </ul>
+        <ul class="iconh">
+            <li><i class="fa-solid fa-magnifying-glass"><a href="index.html"></a></i></li>
+            <li><i class="fa-regular fa-user"><a href="#"></a></i></li>
+            <li><i class="fa-regular fa-star"><a href="#"></a></i></li>
+            <li><i class="fa-solid fa-cart-shopping"><a href="#"></a></i></li>
+        </ul>
+    </div>
+    
+    </header>
+
+
+
+<div class="container">
+    <div class="column" id="column1">
+      <!-- Produkter vil blive indsat dynamisk her ved hjælp af JavaScript -->
+    </div>
+
+    <div class="column" id="column2">
+      <!-- Produkter vil blive indsat dynamisk her ved hjælp af JavaScript -->
+    </div>
+  </div>
+
+  <div class="filters">
+    <div class="filter-group">
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="all">All</option>
+        <option value="clothing">Clothing</option>
+        <option value="electronics">Electronics</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="color">Color:</label>
+      <select id="color">
+        <option value="all">All</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="size">Clothing Size:</label>
+      <select id="size">
+        <option value="all">All</option>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+      </select>
+    </div>
+
+    <button onclick="applyFilters()">Apply Filters</button>
+    <button onclick="resetFilters()">Reset All Filters</button>
+  </div>
+
+  <div id="resultCount">0 result(s)</div>
+
+  <script src="salmawinter.js"></script>
+
+
+  <footer>
+    <h2 class="footer-heading">LaRue Fashion</h2>
+
+
+    <div class="columns">
+    <div class="column">
+        <h3>LARUE FASHION</h3>
+        <ul class="submenu">
+            <li class="submenu-item">MODE</li>
+            <li class="submenu-item">FIND OS HER</li>
+            <li class="submenu-item">FØLG DIN ORDRE</li>
+        </ul>
+    </div>
+
+    <div class="column">
+        <h3>INFORMATION</h3>
+        <ul class="submenu">
+            <li class="submenu-item">FRAGT OG LEVERING</li>
+            <li class="submenu-item">HANDELSBETINGELSER</li>
+            <li class="submenu-item">HJÆLP & FAQ</li>
+            <li class="submenu-item">AFMELD</li>
+        </ul>
+    </div>
+
+    <div class="column">
+        <h3>OM OS</h3>
+        <ul class="submenu">
+            <li class="submenu-item">KONTAKT OS</li>
+            <li class="submenu-item">OM OS</li>
+            <li class="submenu-item">TERMS OF SERVICE</li>
+            <li class="submenu-item">REFUND POLICY</li>
+        </ul>
+    </div>
+  </div>
+
+    <div class="divider"></div>
+
+    <div class="footer-list">
+      <ul>
+        <li>COOKIE PREFERENCES</li>
+        <li>SITEMAP</li>
+        <li>PERSONDATA</li>
+        <li>POLITIKVILKÅR</li>
+        <li>FOR BRUG</li>
+      </ul>
+       <div class="icons">
+      <ul>
+        <li>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </li>
+    </ul>
+      </div>
+    </div>
+    <div class="footer-images">
+      <img src="img/pay.png" alt="alt du kan betale med på Larue Fashion">
+    </div>
+    <div class="footer-text">
+      <p>©2023 LARUE DREVET AF SHOPIFY</p>
+    </div>
+</footer>
+</body>
+</html>
