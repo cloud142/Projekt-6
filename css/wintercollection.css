@@ -31,29 +31,28 @@ body {
   }
   
   .column {
-    width: 30%; /* Bredden ændret for at have plads til 3 produkter på hver linje */
+    width: 30%; 
     padding: 10px;
-    border: 1px solid #ddd;
     margin-bottom: 20px;
     box-sizing: border-box;
   }
   
   .product-container {
     display: flex;
-    flex-wrap: wrap; /* Ændret til wrap for at opnå ønsket layout */
-    justify-content: space-around; /* Tilføjet for at centrere produkterne vandret */
+    flex-wrap: wrap; 
+    justify-content: space-around; 
   }
   
   .product {
-    width: 30%; /* Bredden ændret for at have plads til 3 produkter på hver linje */
+    width: 30%; 
     box-sizing: border-box;
     margin-bottom: 20px;
-    border: 1px solid rgba(221, 221, 221, 0.5); /* Tilføjet en kant for at adskille produkter */
+    border: 1px solid rgba(221, 221, 221, 0.5); 
     padding: 10px;
   }
   
   .product img {
-    width: 100%; /* Gør billedet fyldt 100% inden for forældre-containeren */
+    width: 100%; 
     height: auto;
     display: block;
   }
@@ -92,7 +91,7 @@ body {
     margin-top: 20px;
   }
   
-  /* Medieforespørgsler for at gøre siden responsiv */
+
   
   @media screen and (max-width: 768px) {
     .container {
