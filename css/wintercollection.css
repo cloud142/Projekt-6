@@ -20,10 +20,11 @@ body {
   }
   
   .product img {
-    max-width: 100%; /* Begræns billedbredden til 100% af forældrelementet */
-    height: auto; /* Sørg for, at højden justeres automatisk for at bevare billedets sideforhold */
-    display: block; /* Fjern eventuel hvid plads under billedet */
-  }
+    max-width: 20%; /* Ændret til 20% af forældrelementet for mindre billeder */
+    height: auto;
+    margin: 0px auto; /* Tilføjet margin */
+    display: block;
+}
   
   table {
     width: 100%;

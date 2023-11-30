@@ -1,33 +1,44 @@
 const products = [
-    { name: "White LRActive", price: 679, image: "./img/track1.jpg" },
-    { name: "LR Winter Jacket 2", price: 1.800, image: "./img/jakke1.jpg" },
-    { name: "LR Winter Jacket 2", price: 1.800 , image: "./img/jakke2.jpg" },
-    { name: "LR Winter Jacket 2", price: 1.800, image: "./img/jakke3.jpg" },
-    { name: "White LRActive", price: 679 , image: "./img/trak1.jpg" },
-    { name: "LR Winter Jacket 2", price: 1.800, image: "./img/jakke4.jpg" }
-  ];
-  
-  function updateProducts() {
-    const productContainer = document.querySelector(".product-container");
-    productContainer.innerHTML = "";
-  
-    products.forEach(product => {
-      const productElement = document.createElement("div");
-      productElement.classList.add("product");
-  
-      const imageElement = document.createElement("img");
-      imageElement.src = product.image;
-      imageElement.alt = product.name;
-  
-      const infoElement = document.createElement("div");
-      infoElement.innerHTML = `${product.name}<br>Pris: ${product.price} DKK`;
-  
-      productElement.appendChild(imageElement);
-      productElement.appendChild(infoElement);
-  
-      productContainer.appendChild(productElement);
-    });
-  }
+  { name: "White LRActive", price: 679, image: "./img/trak1.jpg" },
+  { name: "LR Winter Jacket 2", price: 1.800, image: "./img/jakke1.jpg" },
+  { name: "LR Winter Jacket 2", price: 1.800 , image: "./img/jakke2.jpg" },
+  { name: "LR Winter Jacket 2", price: 1.800, image: "./img/jakke3.jpg" },
+  { name: "White LRActive", price: 679 , image: "./img/trak2.jpg" },
+  { name: "LR Winter Jacket 2", price: 1.800, image: "./img/jakke4.jpg" }
+];
+
+function updateProducts() {
+  const row1 = document.getElementById("row1");
+  const row2 = document.getElementById("row2");
+
+  row1.innerHTML = "";
+  row2.innerHTML = "";
+
+  products.forEach((product, index) => {
+    const productElement = document.createElement("div");
+    productElement.classList.add("product");
+
+    const imageElement = document.createElement("img");
+    imageElement.src = product.image;
+    imageElement.alt = product.name;
+
+    const infoElement = document.createElement("div");
+    infoElement.classList.add("product-info");
+    infoElement.innerHTML = `
+      <p class="product-name">${product.name}</p>
+      <p class="product-price">Pris: ${product.price} DKK</p>
+    `;
+
+    productElement.appendChild(imageElement);
+    productElement.appendChild(infoElement);
+
+    if (index < 3) {
+      row1.appendChild(productElement);
+    } else {
+      row2.appendChild(productElement);
+    }
+  });
+}
   
   function applyFilters() {
     // Implementer logikken til filtrering baseret på valgte filtre
