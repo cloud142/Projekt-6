@@ -1,44 +1,41 @@
-// JavaScript-koden herunder vil blive brugt til at indsætte produkter dynamisk baseret på dine data.
-// Det er vigtigt at bemærke, at dette er en simpel placeholder, og du skal tilpasse det til dine faktiske data.
-
-const productsColumn1 = [
-    { name: "Produkt 1", price: 100 },
-    { name: "Produkt 2", price: 150 },
-    { name: "Produkt 3", price: 200 }
+const products = [
+    { name: "White LRActive", price: 679, image: "./img/track1.jpg" },
+    { name: "LR Winter Jacket 2", price: 1.800, image: "./img/jakke1.jpg" },
+    { name: "LR Winter Jacket 2", price: 1.800 , image: "./img/jakke2.jpg" },
+    { name: "LR Winter Jacket 2", price: 1.800, image: "./img/jakke3.jpg" },
+    { name: "White LRActive", price: 679 , image: "./img/trak1.jpg" },
+    { name: "LR Winter Jacket 2", price: 1.800, image: "./img/jakke4.jpg" }
   ];
   
-  const productsColumn2 = [
-    { name: "Produkt 4", price: 120 },
-    { name: "Produkt 5", price: 180 },
-    { name: "Produkt 6", price: 220 }
-  ];
+  function updateProducts() {
+    const productContainer = document.querySelector(".product-container");
+    productContainer.innerHTML = "";
   
-  // Funktion til at opdatere produktkolonner
-  function updateProductColumns() {
-    const column1 = document.getElementById("column1");
-    const column2 = document.getElementById("column2");
+    products.forEach(product => {
+      const productElement = document.createElement("div");
+      productElement.classList.add("product");
   
-    column1.innerHTML = "";
-    column2.innerHTML = "";
+      const imageElement = document.createElement("img");
+      imageElement.src = product.image;
+      imageElement.alt = product.name;
   
-    productsColumn1.forEach(product => {
-      column1.innerHTML += `<div>${product.name}<br>Pris: ${product.price} DKK</div>`;
-    });
+      const infoElement = document.createElement("div");
+      infoElement.innerHTML = `${product.name}<br>Pris: ${product.price} DKK`;
   
-    productsColumn2.forEach(product => {
-      column2.innerHTML += `<div>${product.name}<br>Pris: ${product.price} DKK</div>`;
+      productElement.appendChild(imageElement);
+      productElement.appendChild(infoElement);
+  
+      productContainer.appendChild(productElement);
     });
   }
   
-  // Funktion til at anvende filtre (placeholder-funktion)
   function applyFilters() {
     // Implementer logikken til filtrering baseret på valgte filtre
     // Opdater resultCount med det nye antal resultater
     const resultCount = document.getElementById("resultCount");
-    resultCount.innerText = "6 result(s)";
+    resultCount.innerText = `${products.length} result(s)`;
   }
   
-  // Funktion til at nulstille filtre (placeholder-funktion)
   function resetFilters() {
     // Implementer logikken til at nulstille filtre
     // Opdater resultCount med det samlede antal resultater
@@ -46,6 +43,6 @@ const productsColumn1 = [
     resultCount.innerText = "0 result(s)";
   }
   
-  // Opdater produktkolonner ved indlæsning af siden
-  updateProductColumns();
+  // Opdater produkter ved indlæsning af siden
+  updateProducts();
   
