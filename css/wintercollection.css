@@ -19,12 +19,11 @@ body {
     box-sizing: border-box;
   }
   
-  .product img {
-    max-width: 20%; /* Ændret til 20% af forældrelementet for mindre billeder */
-    height: auto;
-    margin: 0px auto; /* Tilføjet margin */
-    display: block;
-}
+  .product {
+    width: 30%; /* Bredden ændret for at have plads til 3 produkter på hver linje */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
   
   table {
     width: 100%;
