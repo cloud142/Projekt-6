@@ -1,10 +1,10 @@
 const products = [
   { name: "White LRActive", price: 679, image: "./img/trak1.jpg" },
-  { name: "LR Winter Jacket 2", price: 1.800, image: "./img/jakke1.jpg" },
-  { name: "LR Winter Jacket 2", price: 1.800 , image: "./img/jakke2.jpg" },
-  { name: "LR Winter Jacket 2", price: 1.800, image: "./img/jakke3.jpg" },
-  { name: "White LRActive", price: 679 , image: "./img/trak2.jpg" },
-  { name: "LR Winter Jacket 2", price: 1.800, image: "./img/jakke4.jpg" }
+  { name: "LR Winter Jacket 2", price: 1800., image: "./img/jakke1.jpg" },
+  { name: "LR Winter Jacket 2", price: 1800. , image: "./img/jakke2.jpg" },
+  { name: "LR Winter Jacket 2", price: 1800, image: "./img/jakke3.jpg" },
+  { name: "White LRActive", price: 679 , image: "./img/trak1.jpg" },
+  { name: "LR Winter Jacket 2", price: 1800, image: "./img/jakke4.jpg" }
 ];
 
 function updateProducts() {
