@@ -8,13 +8,10 @@ const products = [
 ];
 
 function updateProducts() {
-  const row1 = document.getElementById("row1");
-  const row2 = document.getElementById("row2");
+  const productContainer = document.getElementById("productContainer");
+  productContainer.innerHTML = "";
 
-  row1.innerHTML = "";
-  row2.innerHTML = "";
-
-  products.forEach((product, index) => {
+  products.forEach(product => {
     const productElement = document.createElement("div");
     productElement.classList.add("product");
 
@@ -32,11 +29,7 @@ function updateProducts() {
     productElement.appendChild(imageElement);
     productElement.appendChild(infoElement);
 
-    if (index < 3) {
-      row1.appendChild(productElement);
-    } else {
-      row2.appendChild(productElement);
-    }
+    productContainer.appendChild(productElement);
   });
 }
   

@@ -3,6 +3,25 @@ body {
     margin: 0;
     padding: 0;
   }
+
+  .winter-header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.winter-header h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.winter-header .sub-title {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.winter-header .description {
+  font-size: 16px;
+}
   
   .container {
     display: flex;
@@ -19,10 +38,28 @@ body {
     box-sizing: border-box;
   }
   
+  .product-container {
+    display: flex;
+    flex-wrap: wrap; /* Ændret til wrap for at opnå ønsket layout */
+    justify-content: space-around; /* Tilføjet for at centrere produkterne vandret */
+  }
+  
   .product {
     width: 30%; /* Bredden ændret for at have plads til 3 produkter på hver linje */
     box-sizing: border-box;
     margin-bottom: 20px;
+    border: 1px solid rgba(221, 221, 221, 0.5); /* Tilføjet en kant for at adskille produkter */
+    padding: 10px;
+  }
+  
+  .product img {
+    width: 100%; /* Gør billedet fyldt 100% inden for forældre-containeren */
+    height: auto;
+    display: block;
+  }
+  
+  .product-info {
+    text-align: center;
   }
   
   table {
